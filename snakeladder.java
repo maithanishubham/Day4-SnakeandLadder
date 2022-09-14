@@ -2,15 +2,14 @@ package com.bridgelabz.day4;
 
 public class snakeladder {
 
-	int Start_Position = 0;
-	int dice;
+	static int START_POSITION = 0;
 
 	public static void main(String[] args) {
 
-		int dice = (int) (Math.random() * 10) + 1;
+		int dice = (int) (Math.random() * 10) % 6 + 1;
 
-		System.out.println("Starting position is : " + dice);
-
+		System.out.println("Welcome to Snake and ladder Game");
+		System.out.println("rolling of the die Number:" + dice);
 	}
 
 }
